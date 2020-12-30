@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "crimsonbloodmelons:block/melon_1",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "crimsonbloodmelons:block/melon_1"
+    },
+    "facing=south": {
+      "model": "crimsonbloodmelons:block/melon_1",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "crimsonbloodmelons:block/melon_1",
+      "y": 270
+    }
+  }
+}
