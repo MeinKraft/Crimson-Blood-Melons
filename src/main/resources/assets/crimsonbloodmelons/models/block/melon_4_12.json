@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "crimsonbloodmelons:block/melon_top",
+    "front": "crimsonbloodmelons:block/melon_4_12",
+    "side": "crimsonbloodmelons:block/melon_side"
+  }
+}

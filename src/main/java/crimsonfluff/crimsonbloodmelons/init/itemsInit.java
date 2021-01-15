@@ -1,6 +1,7 @@
 package crimsonfluff.crimsonbloodmelons.init;
 
 import crimsonfluff.crimsonbloodmelons.CrimsonBloodMelons;
+import crimsonfluff.crimsonbloodmelons.items.ItemMelonSlice;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
@@ -11,7 +12,7 @@ public class itemsInit {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, CrimsonBloodMelons.MOD_ID);
 
     // Items
-//    public static final RegistryObject<Item> TINY_COAL = ITEMS.register("tiny_coal", ItemTinyCoal::new);
+    public static final RegistryObject<Item> MELON_SLICE = ITEMS.register("melon_slice", ItemMelonSlice::new);
 
     // Block Items
     public static final RegistryObject<Item> MELON1_BLOCK = ITEMS.register("melon_1",

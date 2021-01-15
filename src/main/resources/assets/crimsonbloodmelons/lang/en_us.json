@@ -5,5 +5,8 @@
   "block.crimsonbloodmelons.melon_2": "Blood Melon 2 Block",
   "block.crimsonbloodmelons.melon_3": "Blood Melon 3 Block",
   "block.crimsonbloodmelons.melon_4": "Blood Melon 4 Block",
-  "block.crimsonbloodmelons.melon_5": "Blood Melon 5 Block"
+  "block.crimsonbloodmelons.melon_5": "Blood Melon 5 Block",
+
+  "item.crimsonbloodmelons.melon_slice": "Blood Melon Slice",
+  "tip.crimsonbloodmelons.melon_slice": "Restores a portion of health"
 }

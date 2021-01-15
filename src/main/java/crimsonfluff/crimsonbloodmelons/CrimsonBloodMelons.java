@@ -2,6 +2,7 @@ package crimsonfluff.crimsonbloodmelons;
 
 import crimsonfluff.crimsonbloodmelons.init.blocksInit;
 import crimsonfluff.crimsonbloodmelons.init.itemsInit;
+import crimsonfluff.crimsonbloodmelons.init.tilesInit;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.HorizontalBlock;
 import net.minecraft.entity.item.ItemEntity;
@@ -10,6 +11,8 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.item.ShearsItem;
+import net.minecraft.state.IntegerProperty;
+import net.minecraft.util.DamageSource;
 import net.minecraft.util.Direction;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.SoundEvents;
@@ -23,15 +26,21 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 @Mod(CrimsonBloodMelons.MOD_ID)
 public class CrimsonBloodMelons
 {
     public static final String MOD_ID = "crimsonbloodmelons";
-    //public static final Logger LOGGER = LogManager.getLogger(CrimsonBloodMelons.MOD_ID);
+    public static final Logger LOGGER = LogManager.getLogger(CrimsonBloodMelons.MOD_ID);
     final IEventBus MOD_EVENTBUS = FMLJavaModLoadingContext.get().getModEventBus();
 
+    public static final IntegerProperty MELON_STAGE = IntegerProperty.create("full",0,15);
+    public static final DamageSource DM = new DamageSource("bloodmelon").setDamageBypassesArmor().setDifficultyScaled().setDamageIsAbsolute();
+
     public CrimsonBloodMelons() {
+        tilesInit.TILES.register(MOD_EVENTBUS);
         blocksInit.BLOCKS.register(MOD_EVENTBUS);
         itemsInit.ITEMS.register(MOD_EVENTBUS);
 
@@ -60,6 +69,7 @@ public class CrimsonBloodMelons
                     Direction direction1 = direction.getAxis() == Direction.Axis.Y ? player.getHorizontalFacing().getOpposite() : direction;
 
                     world.playSound(null, pos, SoundEvents.BLOCK_PUMPKIN_CARVE, SoundCategory.BLOCKS, 1.0F, 1.0F);
+                    player.attackEntityFrom(CrimsonBloodMelons.DM, 1);
 
                     switch (world.rand.nextInt(5)) {
                         case 0:
@@ -80,10 +90,10 @@ public class CrimsonBloodMelons
                     }
 
                     ItemEntity itementity = new ItemEntity(world,
-                            (double)pos.getX() + 0.5D + (double)direction1.getXOffset() * 0.65D,
-                            (double)pos.getY() + 0.1D,
-                            (double)pos.getZ() + 0.5D + (double)direction1.getZOffset() * 0.65D,
-                            new ItemStack(Items.MELON_SEEDS, 4));
+                        (double)pos.getX() + 0.5D + (double)direction1.getXOffset() * 0.65D,
+                        (double)pos.getY() + 0.1D,
+                        (double)pos.getZ() + 0.5D + (double)direction1.getZOffset() * 0.65D,
+                        new ItemStack(Items.MELON_SEEDS, 4));
                     itementity.setMotion(0.05D * (double)direction1.getXOffset() + world.rand.nextDouble() * 0.02D, 0.05D, 0.05D * (double)direction1.getZOffset() + world.rand.nextDouble() * 0.02D);
                     world.addEntity(itementity);
 

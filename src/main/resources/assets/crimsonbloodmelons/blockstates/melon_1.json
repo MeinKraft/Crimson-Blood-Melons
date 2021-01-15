@@ -1,19 +1,83 @@
 {
   "variants": {
-    "facing=east": {
-      "model": "crimsonbloodmelons:block/melon_1",
-      "y": 90
-    },
-    "facing=north": {
-      "model": "crimsonbloodmelons:block/melon_1"
-    },
-    "facing=south": {
-      "model": "crimsonbloodmelons:block/melon_1",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "crimsonbloodmelons:block/melon_1",
-      "y": 270
-    }
-  }
+    "facing=north,full=0": { "model": "crimsonbloodmelons:block/melon_1_0" },
+    "facing=south,full=0": { "model": "crimsonbloodmelons:block/melon_1_0", "y": 180 },
+    "facing=west,full=0": { "model": "crimsonbloodmelons:block/melon_1_0", "y": 270 },
+    "facing=east,full=0": { "model": "crimsonbloodmelons:block/melon_1_0", "y": 90 },
+	
+    "facing=north,full=1": { "model": "crimsonbloodmelons:block/melon_1_1" },
+    "facing=south,full=1": { "model": "crimsonbloodmelons:block/melon_1_1", "y": 180 },
+    "facing=west,full=1": { "model": "crimsonbloodmelons:block/melon_1_1", "y": 270 },
+    "facing=east,full=1": { "model": "crimsonbloodmelons:block/melon_1_1", "y": 90 },
+	
+    "facing=north,full=2": { "model": "crimsonbloodmelons:block/melon_1_2" },
+    "facing=south,full=2": { "model": "crimsonbloodmelons:block/melon_1_2", "y": 180 },
+    "facing=west,full=2": { "model": "crimsonbloodmelons:block/melon_1_2", "y": 270 },
+    "facing=east,full=2": { "model": "crimsonbloodmelons:block/melon_1_2", "y": 90 },
+	
+    "facing=north,full=3": { "model": "crimsonbloodmelons:block/melon_1_3" },
+    "facing=south,full=3": { "model": "crimsonbloodmelons:block/melon_1_3", "y": 180 },
+    "facing=west,full=3": { "model": "crimsonbloodmelons:block/melon_1_3", "y": 270 },
+    "facing=east,full=3": { "model": "crimsonbloodmelons:block/melon_1_3", "y": 90 },
+	
+    "facing=north,full=4": { "model": "crimsonbloodmelons:block/melon_1_4" },
+    "facing=south,full=4": { "model": "crimsonbloodmelons:block/melon_1_4", "y": 180 },
+    "facing=west,full=4": { "model": "crimsonbloodmelons:block/melon_1_4", "y": 270 },
+    "facing=east,full=4": { "model": "crimsonbloodmelons:block/melon_1_4", "y": 90 },
+	
+    "facing=north,full=5": { "model": "crimsonbloodmelons:block/melon_1_5" },
+    "facing=south,full=5": { "model": "crimsonbloodmelons:block/melon_1_5", "y": 180 },
+    "facing=west,full=5": { "model": "crimsonbloodmelons:block/melon_1_5", "y": 270 },
+    "facing=east,full=5": { "model": "crimsonbloodmelons:block/melon_1_5", "y": 90 },
+	
+    "facing=north,full=6": { "model": "crimsonbloodmelons:block/melon_1_6" },
+    "facing=south,full=6": { "model": "crimsonbloodmelons:block/melon_1_6", "y": 180 },
+    "facing=west,full=6": { "model": "crimsonbloodmelons:block/melon_1_6", "y": 270 },
+    "facing=east,full=6": { "model": "crimsonbloodmelons:block/melon_1_6", "y": 90 },
+	
+    "facing=north,full=7": { "model": "crimsonbloodmelons:block/melon_1_7" },
+    "facing=south,full=7": { "model": "crimsonbloodmelons:block/melon_1_7", "y": 180 },
+    "facing=west,full=7": { "model": "crimsonbloodmelons:block/melon_1_7", "y": 270 },
+    "facing=east,full=7": { "model": "crimsonbloodmelons:block/melon_1_7", "y": 90 },
+	
+	"facing=north,full=8": { "model": "crimsonbloodmelons:block/melon_1_8" },
+    "facing=south,full=8": { "model": "crimsonbloodmelons:block/melon_1_8", "y": 180 },
+    "facing=west,full=8": { "model": "crimsonbloodmelons:block/melon_1_8", "y": 270 },
+    "facing=east,full=8": { "model": "crimsonbloodmelons:block/melon_1_8", "y": 90 },
+	
+    "facing=north,full=9": { "model": "crimsonbloodmelons:block/melon_1_9" },
+    "facing=south,full=9": { "model": "crimsonbloodmelons:block/melon_1_9", "y": 180 },
+    "facing=west,full=9": { "model": "crimsonbloodmelons:block/melon_1_9", "y": 270 },
+    "facing=east,full=9": { "model": "crimsonbloodmelons:block/melon_1_9", "y": 90 },
+	
+    "facing=north,full=10": { "model": "crimsonbloodmelons:block/melon_1_10" },
+    "facing=south,full=10": { "model": "crimsonbloodmelons:block/melon_1_10", "y": 180 },
+    "facing=west,full=10": { "model": "crimsonbloodmelons:block/melon_1_10", "y": 270 },
+    "facing=east,full=10": { "model": "crimsonbloodmelons:block/melon_1_10", "y": 90 },
+	
+    "facing=north,full=11": { "model": "crimsonbloodmelons:block/melon_1_11" },
+    "facing=south,full=11": { "model": "crimsonbloodmelons:block/melon_1_11", "y": 180 },
+    "facing=west,full=11": { "model": "crimsonbloodmelons:block/melon_1_11", "y": 270 },
+    "facing=east,full=11": { "model": "crimsonbloodmelons:block/melon_1_11", "y": 90 },
+	
+    "facing=north,full=12": { "model": "crimsonbloodmelons:block/melon_1_12" },
+    "facing=south,full=12": { "model": "crimsonbloodmelons:block/melon_1_12", "y": 180 },
+    "facing=west,full=12": { "model": "crimsonbloodmelons:block/melon_1_12", "y": 270 },
+    "facing=east,full=12": { "model": "crimsonbloodmelons:block/melon_1_12", "y": 90 },
+	
+    "facing=north,full=13": { "model": "crimsonbloodmelons:block/melon_1_13" },
+    "facing=south,full=13": { "model": "crimsonbloodmelons:block/melon_1_13", "y": 180 },
+    "facing=west,full=13": { "model": "crimsonbloodmelons:block/melon_1_13", "y": 270 },
+    "facing=east,full=13": { "model": "crimsonbloodmelons:block/melon_1_13", "y": 90 },
+	
+    "facing=north,full=14": { "model": "crimsonbloodmelons:block/melon_1_14" },
+    "facing=south,full=14": { "model": "crimsonbloodmelons:block/melon_1_14", "y": 180 },
+    "facing=west,full=14": { "model": "crimsonbloodmelons:block/melon_1_14", "y": 270 },
+    "facing=east,full=14": { "model": "crimsonbloodmelons:block/melon_1_14", "y": 90 },
+	
+    "facing=north,full=15": { "model": "crimsonbloodmelons:block/melon_1_15" },
+    "facing=south,full=15": { "model": "crimsonbloodmelons:block/melon_1_15", "y": 180 },
+    "facing=west,full=15": { "model": "crimsonbloodmelons:block/melon_1_15", "y": 270 },
+    "facing=east,full=15": { "model": "crimsonbloodmelons:block/melon_1_15", "y": 90 }
+	}
 }
